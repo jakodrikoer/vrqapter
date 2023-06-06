@@ -930,32 +930,32 @@
 		},
 		{
 			"componentType":5126,
-			"count":21253,
+			"count":75346,
 			"max":[
-				215.33106994628906,
-				164.2280731201172,
-				101.30304718017578
+				215.3137664794922,
+				164.208251953125,
+				101.28343963623047
 			],
 			"min":[
-				-219.56234741210938,
-				28.4697322845459,
-				-101.30304718017578
+				-219.44467163085938,
+				28.48988914489746,
+				-101.28343963623047
 			],
 			"type":"VEC3"
 		},
 		{
 			"componentType":5126,
-			"count":21253,
+			"count":75346,
 			"type":"VEC2"
 		},
 		{
 			"componentType":5126,
-			"count":21253,
+			"count":75346,
 			"type":"VEC3"
 		},
 		{
-			"componentType":5123,
-			"count":66180,
+			"componentType":5125,
+			"count":250425,
 			"type":"SCALAR"
 		},
 		{
@@ -990,32 +990,32 @@
 		},
 		{
 			"componentType":5126,
-			"count":332,
+			"count":864,
 			"max":[
-				107.0694808959961,
-				153.07557678222656,
-				74.69840240478516
+				107.1964340209961,
+				153.14479064941406,
+				74.91242218017578
 			],
 			"min":[
-				-205.1075439453125,
-				108.48053741455078,
-				-74.69840240478516
+				-205.27383422851562,
+				108.42047882080078,
+				-74.91242218017578
 			],
 			"type":"VEC3"
 		},
 		{
 			"componentType":5126,
-			"count":332,
+			"count":864,
 			"type":"VEC2"
 		},
 		{
 			"componentType":5126,
-			"count":332,
+			"count":864,
 			"type":"VEC3"
 		},
 		{
 			"componentType":5123,
-			"count":1008,
+			"count":2688,
 			"type":"SCALAR"
 		},
 		{
@@ -1577,113 +1577,113 @@
 		},
 		{
 			"buffer":0,
-			"byteLength":122544,
+			"byteLength":381614,
 			"byteOffset":490072
 		},
 		{
 			"buffer":0,
 			"byteLength":7590,
-			"byteOffset":612616
+			"byteOffset":871688
 		},
 		{
 			"buffer":0,
-			"byteLength":2166,
-			"byteOffset":620208
+			"byteLength":4812,
+			"byteOffset":879280
 		},
 		{
 			"buffer":0,
 			"byteLength":12839,
-			"byteOffset":622376
+			"byteOffset":884092
 		},
 		{
 			"buffer":0,
 			"byteLength":1474,
-			"byteOffset":635216
+			"byteOffset":896932
 		},
 		{
 			"buffer":0,
 			"byteLength":408,
-			"byteOffset":636692
+			"byteOffset":898408
 		},
 		{
 			"buffer":0,
 			"byteLength":46975,
-			"byteOffset":637100
+			"byteOffset":898816
 		},
 		{
 			"buffer":0,
 			"byteLength":361353,
-			"byteOffset":684076
+			"byteOffset":945792
 		},
 		{
 			"buffer":0,
 			"byteLength":212258,
-			"byteOffset":1045432
+			"byteOffset":1307148
 		},
 		{
 			"buffer":0,
 			"byteLength":50898,
-			"byteOffset":1257692
+			"byteOffset":1519408
 		},
 		{
 			"buffer":0,
 			"byteLength":744000,
-			"byteOffset":1308592
+			"byteOffset":1570308
 		},
 		{
 			"buffer":0,
 			"byteLength":160803,
-			"byteOffset":2052592
+			"byteOffset":2314308
 		},
 		{
 			"buffer":0,
 			"byteLength":98838,
-			"byteOffset":2213396
+			"byteOffset":2475112
 		},
 		{
 			"buffer":0,
 			"byteLength":13619,
-			"byteOffset":2312236
+			"byteOffset":2573952
 		},
 		{
 			"buffer":0,
 			"byteLength":5625,
-			"byteOffset":2325856
+			"byteOffset":2587572
 		},
 		{
 			"buffer":0,
 			"byteLength":38041,
-			"byteOffset":2331484
+			"byteOffset":2593200
 		},
 		{
 			"buffer":0,
 			"byteLength":3666,
-			"byteOffset":2369528
+			"byteOffset":2631244
 		},
 		{
 			"buffer":0,
 			"byteLength":15027,
-			"byteOffset":2373196
+			"byteOffset":2634912
 		},
 		{
 			"buffer":0,
 			"byteLength":13999,
-			"byteOffset":2388224
+			"byteOffset":2649940
 		},
 		{
 			"buffer":0,
 			"byteLength":17665,
-			"byteOffset":2402224
+			"byteOffset":2663940
 		},
 		{
 			"buffer":0,
 			"byteLength":113734,
-			"byteOffset":2419892
+			"byteOffset":2681608
 		}
 	],
 	"buffers":[
 		{
-			"byteLength":2533628,
+			"byteLength":2795344,
 			"uri":"carbase.bin"
 		}
 	]
