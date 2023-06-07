@@ -12,26 +12,39 @@ export default function Model({ ...props }) {
   return (
     <group ref={group} {...props} dispose={null}>
       <group name="Scene">
-        <mesh name="ProtectorSuperior" geometry={nodes.ProtectorSuperior.geometry} material={nodes.ProtectorSuperior.material} position={[2, 0.89, 0]} />
-        <mesh name="ParachoqueInferior" geometry={nodes.ParachoqueInferior.geometry} material={nodes.ParachoqueInferior.material} position={[2.02, 0.37, 0]} />
-        <mesh name="Parrilla" geometry={nodes.Parrilla.geometry} material={nodes.Parrilla.material} position={[2.09, 0.75, 0]} />
-        <mesh name="ProtectorInferior" geometry={nodes.ProtectorInferior.geometry} material={nodes.ProtectorInferior.material} position={[1.71, 0.35, 0]} />
-        <mesh name="GuardapolvoCocuyos" geometry={nodes.GuardapolvoCocuyos.geometry} material={nodes.GuardapolvoCocuyos.material} position={[2.03, 0.59, -0.74]} />
-        <mesh name="Placa" geometry={nodes.Placa.geometry} material={nodes.Placa.material} position={[2.26, 0.57, 0.01]} />
-        <mesh name="Cocuyos_Derecho" geometry={nodes.Cocuyos_Derecho.geometry} material={nodes.Cocuyos_Derecho.material} position={[2.01, 0.58, -0.74]} scale={[0.8, 1, 1]} />
-        <mesh name="BordeParrilla" geometry={nodes.BordeParrilla.geometry} material={nodes.BordeParrilla.material} position={[2.14, 0.77, 0.03]} />
-        <mesh name="ParachoqueSuperior" geometry={nodes.ParachoqueSuperior.geometry} material={nodes.ParachoqueSuperior.material} position={[1.93, 0.67, 0.11]} />
-        <mesh name="LucesDelantera" geometry={nodes.LucesDelantera.geometry} material={nodes.LucesDelantera.material} position={[1.9, 0.82, 0]} />
-        <mesh name="BombillaPrincipales" geometry={nodes.BombillaPrincipales.geometry} material={nodes.BombillaPrincipales.material} position={[1.55, 0.83, 0]} />
-        <mesh name="BarraHorizontal" geometry={nodes.BarraHorizontal.geometry} material={nodes.BarraHorizontal.material} position={[1, 0.86, -0.12]} />
-        <mesh name="Pieza1" geometry={nodes.Pieza1.geometry} material={nodes.Pieza1.material} position={[1.93, 0.79, 0.06]} rotation={[Math.PI / 2, 0, -1.57]} scale={0.03} />
-        <mesh name="Pieza2" geometry={nodes.Pieza2.geometry} material={nodes.Pieza2.material} position={[1.85, 0.8, 0.07]} rotation={[Math.PI / 2, 0, -1.58]} scale={0.06} />
-        <mesh name="Pieza3" geometry={nodes.Pieza3.geometry} material={nodes.Pieza3.material} position={[1.72, 0.72, 0.02]} rotation={[Math.PI / 2, 0, -1.54]} scale={0.36} />
-        <mesh name="JeepCapo" geometry={nodes.JeepCapo.geometry} material={nodes.JeepCapo.material} scale={0.01} />
-        <mesh name="Parabrisa_Delantero" geometry={nodes.Parabrisa_Delantero.geometry} material={nodes.Parabrisa_Delantero.material} scale={0.01} />
-        <mesh name="GuardapolvoCocuyos001" geometry={nodes.GuardapolvoCocuyos001.geometry} material={nodes.GuardapolvoCocuyos001.material} position={[2.03, 0.59, 0.73]} />
-        <mesh name="Cocuyos_Izquierdo" geometry={nodes.Cocuyos_Izquierdo.geometry} material={nodes.Cocuyos_Izquierdo.material} position={[2.01, 0.58, 0.74]} scale={[0.8, 1, 1]} />
-        <mesh name="Capo" geometry={nodes.Capo.geometry} material={nodes.Capo.material} scale={0.01} />
+        <mesh name="ProtectorSuperior" geometry={nodes.ProtectorSuperior.geometry} material={materials.PlasticoGris} position={[2, 0.89, 0]} />
+        <mesh name="ParachoqueInferior" geometry={nodes.ParachoqueInferior.geometry} material={materials.PlasticoGris} position={[2.02, 0.37, 0]} />
+        <mesh name="Parrilla" geometry={nodes.Parrilla.geometry} material={materials.PlasticoGris} position={[2.09, 0.75, 0]} />
+        <mesh name="ProtectorInferior" geometry={nodes.ProtectorInferior.geometry} material={materials.PlasticoGris} position={[1.71, 0.35, 0]} />
+        <mesh name="GuardapolvoCocuyos" geometry={nodes.GuardapolvoCocuyos.geometry} material={materials.PlasticoGris} position={[2.03, 0.59, -0.74]} />
+        <mesh name="Placa" geometry={nodes.Placa.geometry} material={materials.PlasticoGris} position={[2.26, 0.57, 0.01]} />
+        <group name="Cocuyos_Derecho" position={[2.01, 0.58, -0.74]}>
+          <mesh name="105" geometry={nodes['105'].geometry} material={materials.PlasticoGris} />
+          <mesh name="105_1" geometry={nodes['105_1'].geometry} material={materials.PlasticoTransparente} />
+        </group>
+        <mesh name="BordeParrilla" geometry={nodes.BordeParrilla.geometry} material={materials.PlasticoGris} position={[2.14, 0.77, 0.03]} />
+        <mesh name="ParachoqueSuperior" geometry={nodes.ParachoqueSuperior.geometry} material={materials.MetalGris} position={[1.93, 0.67, 0.11]} />
+        <group name="LucesDelantera" position={[1.9, 0.82, 0]}>
+          <mesh name="134" geometry={nodes['134'].geometry} material={materials.PlasticoTransparente} />
+          <mesh name="134_1" geometry={nodes['134_1'].geometry} material={materials.Chrome} />
+          <mesh name="134_2" geometry={nodes['134_2'].geometry} material={materials.PlasticoGris} />
+        </group>
+        <group name="BombillaPrincipales" position={[1.55, 0.83, 0]}>
+          <mesh name="105001" geometry={nodes['105001'].geometry} material={materials.PlasticoTransparente} />
+          <mesh name="105001_1" geometry={nodes['105001_1'].geometry} material={materials.PlasticoGris} />
+        </group>
+        <mesh name="BarraHorizontal" geometry={nodes.BarraHorizontal.geometry} material={materials.Metal} position={[1, 0.86, -0.12]} />
+        <mesh name="Pieza1" geometry={nodes.Pieza1.geometry} material={materials.Metal} position={[1.93, 0.79, 0.06]} />
+        <mesh name="Pieza2" geometry={nodes.Pieza2.geometry} material={materials.Metal} position={[1.85, 0.8, 0.07]} />
+        <mesh name="Pieza3" geometry={nodes.Pieza3.geometry} material={materials.PlasticoGris} position={[1.72, 0.72, 0.02]} />
+        <mesh name="JeepCapo" geometry={nodes.JeepCapo.geometry} material={materials.Chrome} />
+        <mesh name="Parabrisa_Delantero" geometry={nodes.Parabrisa_Delantero.geometry} material={materials.Vidrio} />
+        <mesh name="GuardapolvoCocuyos001" geometry={nodes.GuardapolvoCocuyos001.geometry} material={materials.PlasticoGris} position={[2.03, 0.59, 0.73]} />
+        <group name="Cocuyos_Izquierdo" position={[2.01, 0.58, 0.74]}>
+          <mesh name="105002" geometry={nodes['105002'].geometry} material={materials.PlasticoGris} />
+          <mesh name="105002_1" geometry={nodes['105002_1'].geometry} material={materials.PlasticoTransparente} />
+        </group>
+        <mesh name="Capo" geometry={nodes.Capo.geometry} material={materials.MetalGris} />
       </group>
     </group>
   )
