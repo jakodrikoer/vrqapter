@@ -940,9 +940,9 @@
 			"name":"PlasticoGris",
 			"pbrMetallicRoughness":{
 				"baseColorFactor":[
-					0.016807349398732185,
-					0.020288538187742233,
-					0.02217387966811657,
+					0.07421350479125977,
+					0.07421351969242096,
+					0.07421358674764633,
 					1
 				],
 				"metallicFactor":0,
@@ -955,16 +955,16 @@
 			"name":"PlasticoTransparente",
 			"pbrMetallicRoughness":{
 				"baseColorFactor":[
-					0.800000011920929,
-					0.800000011920929,
-					0.800000011920929,
+					0.783536970615387,
+					0.7835370898246765,
+					0.8879230618476868,
 					1
 				],
 				"baseColorTexture":{
 					"index":0
 				},
 				"metallicFactor":0,
-				"roughnessFactor":0
+				"roughnessFactor":0.20000000298023224
 			}
 		},
 		{
@@ -978,9 +978,9 @@
 			"name":"MetalGris",
 			"pbrMetallicRoughness":{
 				"baseColorFactor":[
-					0.19120150804519653,
-					0.19120153784751892,
-					0.19120171666145325,
+					0.539479672908783,
+					0.11193225532770157,
+					0,
 					1
 				],
 				"roughnessFactor":0.44999998807907104
@@ -991,12 +991,13 @@
 			"name":"Chrome",
 			"pbrMetallicRoughness":{
 				"baseColorFactor":[
-					0.7642793655395508,
-					0.7642793655395508,
-					0.7642793655395508,
+					0.603826642036438,
+					0.6038267612457275,
+					0.6038272976875305,
 					1
 				],
-				"roughnessFactor":0.09594598412513733
+				"metallicFactor":0.6000000238418579,
+				"roughnessFactor":0.20000000298023224
 			}
 		},
 		{
@@ -1004,9 +1005,9 @@
 			"name":"Metal",
 			"pbrMetallicRoughness":{
 				"baseColorFactor":[
-					0.2571847438812256,
-					0.2571847438812256,
-					0.2571847438812256,
+					0.3139880895614624,
+					0.4735310673713684,
+					0.6104956865310669,
 					1
 				],
 				"metallicFactor":0.812688946723938,
@@ -1019,15 +1020,16 @@
 			"name":"Vidrio",
 			"pbrMetallicRoughness":{
 				"baseColorFactor":[
-					0,
-					0,
-					0,
+					0.3185460567474365,
+					0.31854626536369324,
+					1,
 					1
 				],
 				"baseColorTexture":{
 					"index":1
 				},
-				"roughnessFactor":0
+				"metallicFactor":0,
+				"roughnessFactor":0.15000000596046448
 			}
 		}
 	],
@@ -1590,15 +1592,10 @@
 		},
 		{
 			"sampler":0,
-			"source":1
+			"source":0
 		}
 	],
 	"images":[
-		{
-			"mimeType":"image/png",
-			"name":"alphaVidrioClaro",
-			"uri":"alphaVidrioClaro.png"
-		},
 		{
 			"mimeType":"image/png",
 			"name":"alphaVidrio",
